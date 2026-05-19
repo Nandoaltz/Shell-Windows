@@ -1,0 +1,23 @@
+format = """
+[   ](bold yellow) $directory$git_branch$rust$package
+[ 🦖](bold green)
+"""
+
+scan_timeout = 10
+add_newline = false
+palette = "foo"
+
+[palettes.foo]
+blue = "21"
+mustard = "#af8700"
+
+[directory]
+style = "yellow"
+home_symbol = "~"
+read_only = "🔒"
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = " "
+style = "bold yellow"
+format = "[$symbol$branch ]($style)"
